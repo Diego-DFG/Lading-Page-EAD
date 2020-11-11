@@ -1,0 +1,48 @@
+
+
+/*General Styles ----------------------------------------------------------------------------------------------*/
+
+body { padding: 0; margin: 0; overflow-x: hidden; }
+	.wrapper { height: 3200px; overflow: hidden; display: grid; grid-template-areas: "nav" "main" "section" "footer"; 
+		grid-template-rows: 2% 30% 63% 5%; }
+		.navegacao { grid-area: nav; }
+		.destaque { grid-area: main; }
+		.conteudo { grid-area: section; }
+			.secao-produto { height: 50%; }
+			.secao-validacao{ height: 50%; }
+		.rodape { grid-area: footer; }
+/*End of general styles --------------------------------------------------------------------------------------*/
+
+/*Navegação-----------------------------------------------------------------------------*/
+
+.navegacao { background: #222; display: flex; font-family: 'Montserrat', sans-serif; }
+	.logo { margin-left: 1em; }
+	.logo-navegacao { color: #fff; font-size: 1.7em; text-decoration: none; }
+	.navegacao-itens-lista { display: flex; }
+	.navegacao-itens-lista li { list-style: none; }
+	.navegacao-itens-lista li a { text-decoration: none; color: #fff; font-size: 0.9em; 
+		margin-right: 1em; }
+
+
+/*Fim de navegação---------------------------------------------------------------------*/
+
+/*Destaque----------------------------------------------------------------------------*/
+
+.destaque { background: url('../img/ead_03.jpeg'); }
+
+/*Fim destaques-----------------------------------------------------------------------*/
+
+
+/*Breakpoints ------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 420px) {
+
+}
+
+@media (min-width: 421px) and (max-width: 720px) {
+
+}
+
+@media (min-width: 721px) and (max-width: 920px) {
+
+}
