@@ -28,7 +28,7 @@ body { padding: 0; margin: 0; overflow-x: hidden; }
 
 /*Destaque----------------------------------------------------------------------------*/
 
-.destaque { background: url('../img/ead_03.jpeg'); }
+.destaque { background: url('../img/ead_01.jpeg')no-repeat center/cover; }
 
 /*Fim destaques-----------------------------------------------------------------------*/
 
