@@ -3,7 +3,7 @@
 /*General Styles ----------------------------------------------------------------------------------------------*/
 
 body { padding: 0; margin: 0; overflow-x: hidden; }
-	.wrapper { height: 3200px; overflow: hidden; display: grid; grid-template-areas: "nav" "main" "section" "footer"; 
+	.wrapper { height: 2200px; overflow: hidden; display: grid; grid-template-areas: "nav" "main" "section" "footer"; 
 		grid-template-rows: 3% 30% 62% 5%; }
 		.navegacao { grid-area: nav; }
 		.destaque { grid-area: main; }
@@ -51,7 +51,7 @@ body { padding: 0; margin: 0; overflow-x: hidden; }
 /*Fim destaques-----------------------------------------------------------------------*/
 
 /*Produtos ----------------------------------------------------------------------------*/
-.secao-produto { display: flex; margin-top: 10em; }
+.secao-produto { height: 50%; display: flex; margin-top: 10em; }
 	.produtos-texto { width: 40%; margin-left: 7em; font-family: 'Roboto', sans-serif; }
 		.produtos-texto-titulo { font-weight: 800; }
 		.produtos-texto-paragrafo { margin-top: 5em; }
@@ -59,21 +59,24 @@ body { padding: 0; margin: 0; overflow-x: hidden; }
 	.produtos-imagem { width: 40%; margin-left: 4em; }
 /*Fim produtos ------------------------------------------------------------------------*/
 
-/*Vantagens ---------------------------------------------------------------------------*/
-	.validacao-menu-itens { width: 200px; position: relative; bottom: 20px; 
-		border-right: 1px solid rgba(0,0,0,0.1); border-left: 1px solid rgba(0,0,0,0.1); }
-	.validacao-menu-itens li { list-style: none; margin-top: 1em; padding: 1em; }
-	.validacao-menu-itens li:hover { background: tomato; width: 100%; 
-		border-radius: 30px; }
+/*Vanlidação ---------------------------------------------------------------------------*/
+	.validacao-menu-itens { width: 200px; position: relative; top: 50px; 
+		border-right: 1px solid rgba(0,0,0,0.1); border-left: 1px solid rgba(0,0,0,0.1); padding-right: 2em;}
+	.validacao-menu-itens li { list-style: none; margin-top: 1em; padding: 1em; text-align: center;}
+	.validacao-menu-itens li:hover { }
 	.validacao-menu-itens li a { color: #222; list-style: none; text-align: center; 
 		text-decoration: none; }
-.secao-validacao { display: flex; margin-left: 10em; }
-	.secao-pratos-card-sup { width: 150px; display: flex; margin-left: 10em; }
-		.secao-pratos-card-sup img { height: 150px; }
-		.secao-pratos-card-sup h2 { text-align: center; font-size: 1.5em; }
-		.pratos-card { margin-right: 1em; }
+	.validacao-menu-itens li a:hover { color: #fff; font-weight: bold; background: tomato; 
+		border-radius: 30px; padding: 1em;}
+.secao-validacao { height: 50%; display: flex; margin-left: 10em; }
+	.validacao-titulo { font-family: 'Roboto', sans-serif; color: #222; font-weight: 800;
+						position: relative; left: 130%; bottom: 10%; }
+	.secao-pratos-card { width: 150px; display: flex; margin-left: 10em; }
+		.secao-pratos-card img { height: 150px; width: 200px; }
+		.secao-pratos-card h2 { text-align: center; font-size: 1.5em; }
+		.pratos-card { margin-right: 1em; margin-bottom: 2em;}
 }
-/*Fim vantagens -----------------------------------------------------------------------*/
+/*Fim validação -----------------------------------------------------------------------*/
 
 /*Breakpoints ------------------------------------------------------------------------------------------------*/
 
